@@ -1,0 +1,233 @@
+{
+  "target": {
+    "trainerId": 244,
+    "trainer": "챔피언 목호",
+    "levels": [
+      46,
+      49,
+      49,
+      48,
+      48,
+      50
+    ],
+    "average": 48.3333333333,
+    "capRule": "floor(average) + delta"
+  },
+  "assumptions": {
+    "baseLevel": 48,
+    "levelAdjustment": "Use the UI opponent-average +1..+5 projection",
+    "pokewalkerAllowed": false,
+    "externalSpeciesImportAllowed": false,
+    "locallyCaughtTradeEvolutionAllowed": true,
+    "availabilityTags": {
+      "gengar": "trade-evolution",
+      "misdreavus": "dusk-stone-unavailable-before-first-champion"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "champion-ghost-iv0",
+      "label": "목호전 · 첫 목호전 합법 고스트 2종 · IV 0 · 무보정 성격 · EV 0 · 기준 Lv.48",
+      "level": 48,
+      "tags": [
+        "ghost-only",
+        "first-champion-legal",
+        "no-pokewalker",
+        "no-external-import",
+        "party",
+        "iv0"
+      ],
+      "file": "champion-ghost-iv0.dsv",
+      "members": [
+        "gengar",
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-ghost-iv15",
+      "label": "목호전 · 첫 목호전 합법 고스트 2종 · IV 15 · 무보정 성격 · EV 0 · 기준 Lv.48",
+      "level": 48,
+      "tags": [
+        "ghost-only",
+        "first-champion-legal",
+        "no-pokewalker",
+        "no-external-import",
+        "party",
+        "iv15"
+      ],
+      "file": "champion-ghost-iv15.dsv",
+      "members": [
+        "gengar",
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-ghost-iv31",
+      "label": "목호전 · 첫 목호전 합법 고스트 2종 · IV 31 · 무보정 성격 · EV 0 · 기준 Lv.48",
+      "level": 48,
+      "tags": [
+        "ghost-only",
+        "first-champion-legal",
+        "no-pokewalker",
+        "no-external-import",
+        "party",
+        "iv31"
+      ],
+      "file": "champion-ghost-iv31.dsv",
+      "members": [
+        "gengar",
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-gengar-iv0-neutral",
+      "label": "목호전 · 팬텀 · IV 0 · 무보정 성격 · EV 0",
+      "level": 48,
+      "tags": [
+        "gengar",
+        "iv0",
+        "neutral",
+        "spa0"
+      ],
+      "file": "champion-gengar-iv0-neutral.dsv",
+      "members": [
+        "gengar"
+      ]
+    },
+    {
+      "id": "champion-gengar-iv15-neutral",
+      "label": "목호전 · 팬텀 · IV 15 · 무보정 성격 · EV 0",
+      "level": 48,
+      "tags": [
+        "gengar",
+        "iv15",
+        "neutral",
+        "spa0"
+      ],
+      "file": "champion-gengar-iv15-neutral.dsv",
+      "members": [
+        "gengar"
+      ]
+    },
+    {
+      "id": "champion-gengar-iv15-nature",
+      "label": "목호전 · 팬텀 · IV 15 · Modest · EV 0",
+      "level": 48,
+      "tags": [
+        "gengar",
+        "iv15",
+        "recommended",
+        "spa0"
+      ],
+      "file": "champion-gengar-iv15-nature.dsv",
+      "members": [
+        "gengar"
+      ]
+    },
+    {
+      "id": "champion-gengar-iv15-nature-252",
+      "label": "목호전 · 팬텀 · IV 15 · Modest · 특수공격 EV 252",
+      "level": 48,
+      "tags": [
+        "gengar",
+        "iv15",
+        "recommended",
+        "spa252"
+      ],
+      "file": "champion-gengar-iv15-nature-252.dsv",
+      "members": [
+        "gengar"
+      ]
+    },
+    {
+      "id": "champion-gengar-iv31-nature-252",
+      "label": "목호전 · 팬텀 · IV 31 · Modest · 특수공격 EV 252",
+      "level": 48,
+      "tags": [
+        "gengar",
+        "iv31",
+        "recommended",
+        "spa252"
+      ],
+      "file": "champion-gengar-iv31-nature-252.dsv",
+      "members": [
+        "gengar"
+      ]
+    },
+    {
+      "id": "champion-misdreavus-iv0-neutral",
+      "label": "목호전 · 무우마 · IV 0 · 무보정 성격 · EV 0",
+      "level": 48,
+      "tags": [
+        "misdreavus",
+        "iv0",
+        "neutral",
+        "spa0"
+      ],
+      "file": "champion-misdreavus-iv0-neutral.dsv",
+      "members": [
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-misdreavus-iv15-neutral",
+      "label": "목호전 · 무우마 · IV 15 · 무보정 성격 · EV 0",
+      "level": 48,
+      "tags": [
+        "misdreavus",
+        "iv15",
+        "neutral",
+        "spa0"
+      ],
+      "file": "champion-misdreavus-iv15-neutral.dsv",
+      "members": [
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-misdreavus-iv15-nature",
+      "label": "목호전 · 무우마 · IV 15 · Modest · EV 0",
+      "level": 48,
+      "tags": [
+        "misdreavus",
+        "iv15",
+        "recommended",
+        "spa0"
+      ],
+      "file": "champion-misdreavus-iv15-nature.dsv",
+      "members": [
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-misdreavus-iv15-nature-252",
+      "label": "목호전 · 무우마 · IV 15 · Modest · 특수공격 EV 252",
+      "level": 48,
+      "tags": [
+        "misdreavus",
+        "iv15",
+        "recommended",
+        "spa252"
+      ],
+      "file": "champion-misdreavus-iv15-nature-252.dsv",
+      "members": [
+        "misdreavus"
+      ]
+    },
+    {
+      "id": "champion-misdreavus-iv31-nature-252",
+      "label": "목호전 · 무우마 · IV 31 · Modest · 특수공격 EV 252",
+      "level": 48,
+      "tags": [
+        "misdreavus",
+        "iv31",
+        "recommended",
+        "spa252"
+      ],
+      "file": "champion-misdreavus-iv31-nature-252.dsv",
+      "members": [
+        "misdreavus"
+      ]
+    }
+  ]
+}
