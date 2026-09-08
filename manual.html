@@ -21,8 +21,8 @@
     <p class="eyebrow">HGSS · USER MANUAL</p>
     <h1>잠빙이 꼭 필요한지,<br>같이 계산해 봅니다.</h1>
     <p class="lead">고스트 타입 챌린지의 잠빙 이야기를 보다가 “이 파티에도 잠재파워 얼음이 꼭 필요한가?”가 궁금해서 만든 취미 도구입니다. 필요한 구성인지, 필요하다면 최소 어느 위력부터 쓸 만한지 살펴봅니다. 일단 위력 70부터 뽑고 보는 마음은 잠깐 내려놓습니다.</p>
-    <p class="meta">하트골드·소울실버 / 4세대 계산 기준 · 매뉴얼 확인일 2026. 09. 06.</p>
-    <p class="meta">캡처는 고스트 샘플을 사용한 실제 배포 화면입니다. 이미지를 누르면 원본을 크게 볼 수 있습니다. 화면의 수치는 선택한 파티·상대·레벨 조건의 예시입니다.</p>
+    <p class="meta">하트골드·소울실버 / 4세대 계산 기준 · 매뉴얼 확인일 2026. 09. 08.</p>
+    <p class="meta">캡처는 고스트·얼음 샘플을 사용한 화면입니다. 이미지를 누르면 원본을 크게 볼 수 있습니다. 기존 캡처의 배치·수치는 업데이트 전 예시일 수 있으며, 아래 설명과 현재 화면의 설정을 함께 확인합니다.</p>
   </div>
   <div class="layout">
     <nav class="toc" aria-label="매뉴얼 목차">
@@ -63,6 +63,19 @@
         <h3>최근 작업을 이어서 엽니다</h3>
         <p><strong>‘최근 작업 불러오기’</strong>는 이 브라우저에 남아 있는 파티 설정과 분석 화면을 복원합니다. 메인과 분석 화면 위쪽에서 사용할 수 있습니다. 기록이 없으면 버튼이 비활성화됩니다.</p>
         <p>설정은 브라우저에 자동으로 보관됩니다. ‘샘플 선택’으로 돌아가도 최근 작업을 다시 불러올 수 있습니다. 다만 여러 작업의 이력 목록은 아니며, 새 작업을 진행하면 최근 기록도 바뀝니다. 다른 기기·브라우저로 자동 동기화되지 않고, 사이트 데이터 삭제나 비공개 브라우징 종료로 사라질 수 있습니다.</p>
+        <h3>여러 파티를 보관하거나 다른 기기로 옮깁니다</h3>
+        <p>상단 <strong>‘파티 저장·불러오기’</strong>를 엽니다. 최근 작업과 달리 프리셋은 이름을 붙여 별도로 보관합니다.</p>
+        <ul>
+          <li><strong>새 프리셋 저장:</strong> 현재 파티와 계산 기준을 저장합니다. 기존 프리셋을 고른 뒤 ‘선택 프리셋 덮어쓰기’를 누르면 확인 후 현재 설정으로 교체합니다.</li>
+          <li><strong>팀 내보내기:</strong> 현재 파티를 <code>.zzm-team.json</code> 파일로 내려받습니다. 브라우저 데이터 삭제에 대비한 백업이나 다른 기기로 옮길 때 사용합니다.</li>
+          <li><strong>팀 가져오기:</strong> 내보낸 JSON 파일을 읽고 미리보기를 확인한 뒤 ‘이 파티 불러오기’를 누릅니다. 파일 선택만으로 현재 파티가 교체되지는 않습니다.</li>
+        </ul>
+        <p>프리셋을 불러오면 현재 작업 파티와 계산 기준이 바뀝니다. 기존 작업도 남기려면 먼저 저장합니다. 기술 네 칸을 직접 채워야 저장되는 것은 아닙니다. 분석에서는 해당 시점에 쓸 수 있는 기술 후보를 별도로 계산합니다.</p>
+        <figure class="manual-shot"><a href="./manual-images/13-team-library.png" target="_blank" rel="noopener"><img src="./manual-images/13-team-library.png" alt="현재 파티를 이름별 프리셋 또는 팀 JSON 파일로 보관하는 창" loading="lazy"></a><figcaption><strong>파티 보관 · 자동 저장과 별도 프리셋</strong><br>현재 작업을 여러 육성안으로 나눠 보관하려면 이름을 달리해 저장합니다.</figcaption></figure>
+        <h3>게임 세이브에서 현재 파티를 가져옵니다</h3>
+        <p><strong>‘세이브에서 파티 가져오기’</strong>에서 게임 내 리포트로 저장한 HGSS <code>.dsv</code> 또는 512 KiB <code>.sav</code>를 선택합니다. 에뮬레이터의 강제 저장·상태 저장 파일은 지원하지 않습니다. 현재 플레이 버전을 고르고, 종·레벨·도구·특성·기술·IV·EV 미리보기를 확인한 뒤 ‘이 파티로 분석하기’를 누릅니다.</p>
+        <p>파일은 브라우저에서 읽으며 서버로 전송하거나 원본을 수정하지 않습니다. <strong>현재 파티만</strong> 가져옵니다. 박스·가방·스토리 진행은 가져오지 않으므로, 세이브를 읽었다고 실제 소지 도구나 진행 시점까지 자동 검증되는 것은 아닙니다.</p>
+        <figure class="manual-shot"><a href="./manual-images/14-save-import.png" target="_blank" rel="noopener"><img src="./manual-images/14-save-import.png" alt="게임 내 리포트 파일과 현재 플레이 버전을 선택하는 세이브 가져오기 창" loading="lazy"></a><figcaption><strong>세이브 가져오기 · 원본 수정 없이 파티만 읽기</strong><br>팀 JSON 파일은 앞의 ‘팀 가져오기’, 게임 리포트는 이 창에서 엽니다.</figcaption></figure>
       </section>
 
       <section class="chapter" id="journey" aria-labelledby="journey-title">
@@ -88,7 +101,7 @@
 
       <section class="chapter" id="party" aria-labelledby="party-title">
         <h2 id="party-title"><small>04 / PARTY &amp; RESOURCES</small>내 파티와 입수 조건을 조정합니다</h2>
-        <p>여정 매트릭스 위쪽에서 기존 파티원의 <strong>‘설정’</strong> 또는 빈 칸의 <strong>‘추가’</strong>를 누르면 편집 창이 열립니다. 최대 여섯 칸을 사용합니다.</p>
+        <p>분석과 여정 모두 <strong>‘+ 포켓몬 추가’·‘파티 편집’</strong>에서 같은 편집 창을 사용합니다. 매트릭스의 ‘설정’ 또는 빈 칸의 ‘추가’로도 열 수 있습니다. 최대 여섯 칸을 사용합니다.</p>
         <ol class="steps">
           <li><strong>바꿀 칸을 고릅니다.</strong> 기존 칸을 선택한 상태로 새 포켓몬을 누르면 그 칸을 교체합니다. 빈 칸을 선택하면 추가합니다. ‘제외’는 선택한 파티원을 빼는 버튼입니다.</li>
           <li><strong>버전과 진행 시점을 확인합니다.</strong> 하트골드·소울실버와 ‘진행 시점’으로 입수 후보를 확인합니다. 이 시점 선택은 편집 창의 후보 목록 기준이며 여정의 모든 전투 시점을 한꺼번에 바꾸지 않습니다.</li>
@@ -102,37 +115,46 @@
         <p><strong>‘사파리 조건 충족’</strong>은 필요한 오브젝트 배치와 경과일을 실제로 확인했을 때 체크합니다. 이 체크는 후보 선택을 위한 확인이며, 모든 여정 시나리오에서 사파리 오브젝트 제한을 해제하는 보증은 아닙니다. 추가 뒤에도 셀의 입수 조건을 확인합니다.</p>
         <figure class="manual-shot"><a href="./manual-images/07-party-stats.png" target="_blank" rel="noopener" aria-label="파티 편집 · 특성·도구·성격·IV·EV 원본 크게 보기"><img width="1220" height="434" src="./manual-images/07-party-stats.png" alt="파티 편집 · 특성·도구·성격·IV·EV" loading="lazy" decoding="async"></a><figcaption><strong>파티 편집 · 특성·도구·성격·IV·EV</strong><br>눌러서 편집을 선택하면 조정 화면으로 전환됩니다. 위쪽 포켓몬 선택으로 후보 화면에 돌아갑니다. <a href="./manual-images/07-party-stats.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
         <h3>진화와 외부 진화 후 반환</h3>
+        <p>추가할 진화 경로가 하나면 바로 파티에 넣습니다. 여러 경로가 있으면 이미지가 있는 진화형 선택에서 목표를 정하고 추가합니다. 선택한 최종 진화형을 모든 전투에서 바로 쓰는 것은 아니며, 각 전투의 레벨·입수 조건에 맞는 형태로 계산합니다. 능력치 조정 화면에서는 ‘← 포켓몬 선택’으로 후보 목록에 돌아갑니다.</p>
+        <figure class="manual-shot"><a href="./manual-images/17-evolution-choice.png" target="_blank" rel="noopener"><img src="./manual-images/17-evolution-choice.png" alt="뚜벅쵸에서 라플레시아 또는 아르코 등 목표 진화형을 고르는 화면" loading="lazy"></a><figcaption><strong>분기 진화 · 파티에 넣기 전에 목표 선택</strong><br>진화형을 선택하고 추가·교체 버튼을 누릅니다. 회색 선택지의 제한 사유도 확인합니다.</figcaption></figure>
         <p>계산은 등록된 진화 규칙에 따라 레벨·친밀도·일반 통신진화 등을 반영합니다. 진화 도구와 방법에는 별도 조건이 있으므로 레벨만 올렸다고 모든 진화가 열리지는 않습니다. 사용자가 고를 수 있는 친밀도·능력치 분기 등은 ‘가지 진화’에 표시됩니다.</p>
         <p><strong>‘외부 진화 후 반환’</strong>은 HGSS에서 원종을 먼저 얻은 뒤, 등록된 외부 진화 조건을 거쳐 같은 개체가 돌아온다고 가정하는 예외입니다. 다른 게임에서 아무 포켓몬이나 반입해도 된다는 뜻은 아닙니다. 자신의 챌린지가 외부 교환을 허용하는지와 셀의 진화 경로를 함께 확인합니다.</p>
         <h3>챌린지 스타터는 명시적인 예외입니다</h3>
         <p>‘챌린지 스타터’에서 규칙을 고르면 해당 버전에 등록된 시작 지급 후보를 볼 수 있습니다. 실제 지급 후보를 선택한 파티원에는 ‘챌린지 스타트 지급’ 근거가 표시됩니다. 일반 야생 입수와 다른 조건이며, 같은 종을 평범하게 선택했다고 자동으로 예외가 생기는 것은 아닙니다.</p>
         <p>샘플에는 이런 예외 스타팅이 포함될 수 있습니다. 일반 샘플의 기본 IV·EV 안내를 모든 예외 스타터에 그대로 적용하지 말고, 선택 후 표시된 실제 수치를 확인합니다.</p>
+        <p>추천 샘플은 일반 IV 10 기준에서 일부 멤버의 EV를 합계 안에서 나눠 보완한 구성입니다. 예외 지급 개체는 별도 조건을 유지합니다. 현재 기본 샘플은 구애 시리즈를 제외하는 방향으로 보완했으며, 내 자폭·대폭발을 대응 수단으로 사용하지 않습니다. 수동으로 다른 도구나 성격을 선택한 결과와 샘플 기본 결과를 구별합니다. 여러 대안을 검토한 추천이지 모든 파티 조합의 최적해를 증명한 결과는 아닙니다.</p>
       </section>
 
       <section class="chapter" id="matrix" aria-labelledby="matrix-title">
         <h2 id="matrix-title"><small>05 / READ THE MATRIX</small>매트릭스의 한 칸을 읽습니다</h2>
-        <p><strong>행은 상대 포켓몬, 열은 내 파티원</strong>입니다. 한 칸은 그 둘의 비교입니다. 각 상대에게 성공 셀이 하나 이상 있으면 그 상대를 ‘대응’한 것으로 셉니다. ‘대응 3/4마리’는 상대 네 마리 중 세 마리에 계산상 대응 수단이 있다는 뜻입니다.</p>
+        <p><strong>행은 상대 포켓몬, 열은 내 파티원</strong>입니다. 한 칸은 그 둘의 비교입니다. 요약은 상대별로 가장 좋은 대응 경로를 한 번만 셉니다. 예를 들어 <strong>직접 대응 2/4마리 · 회복루프 대응 1마리 · 미대응 1마리</strong>라면 네 상대 중 둘은 직접 공격, 하나는 회복약을 섞는 경로로만 대응하고 하나는 아직 대응하지 못한 상태입니다.</p>
         <dl class="status-list">
-          <dt>공략 성공</dt><dd>현재 계산 기준에서 유리한 결과입니다. 일반 판정은 내 최저 피해 기준 타수와 상대 최대 피해 기준 피격 타수, 선공 조건을 비교합니다. 같은 타수라면 확실한 선공 여부가 중요합니다.</dd>
-          <dt>공략 실패</dt><dd>현재 조건에서 성공 기준을 충족하지 못했습니다. 다른 파티원, 도구, 능력치나 잠재파워를 비교할 출발점입니다. 게임에서 어떤 방법으로도 이길 수 없다는 뜻은 아닙니다.</dd>
+          <dt>돌파가능 · 직접 대응</dt><dd>현재 공격으로 유리한 결과입니다. 일반 판정은 내 최저 피해 기준 타수와 상대 최대 피해 기준 피격 타수, 선공 조건을 비교합니다. 같은 타수라면 확실한 선공 여부가 중요합니다. 명중 실패나 급소까지 없는 승리를 보장하지는 않습니다.</dd>
+          <dt>회복루프돌파가능</dt><dd>직접 돌파는 어렵지만, 계산에 포함된 고급상처약 회복 경로로 대응할 수 있습니다. 직접 대응과 별도로 셉니다.</dd>
+          <dt>돌파불가</dt><dd>현재 조건에서 위 두 기준을 충족하지 못했습니다. 다른 파티원, 도구, 능력치나 잠재파워를 비교할 출발점입니다. 게임에서 어떤 방법으로도 이길 수 없다는 뜻은 아닙니다.</dd>
           <dt>공략 제외</dt><dd>해당 시점의 입수 조건 등에 맞지 않는 파티원입니다. 여정에서는 이 셀을 눌러 상세 분석으로 이동할 수 없습니다. 모든 파티원이 제외되면 상대 자체가 사라지는 대신 ‘사용 가능한 파티원 없음’으로 남습니다.</dd>
           <dt>계산 불가</dt><dd>필수 정보나 지원하지 않는 효과 때문에 판단할 수 없습니다. 성공으로 세지 않습니다. 실패와도 구별해서 확인합니다.</dd>
         </dl>
         <h3>공격·피격·선공 표시</h3>
         <p>셀에는 실제 적용 종과 레벨, 공격·피격 대표 기술, 타입, 명중률, 타수, 피해 HP와 비율이 표시됩니다. 아래의 기술 습득·진화·입수 설명은 그 결과를 만든 조건입니다. 사용 가능한 셀을 누르면 해당 내 포켓몬과 상대를 선택한 상세 분석으로 이동합니다.</p>
-        <figure class="manual-shot"><a href="./manual-images/11-matrix-cells.png" target="_blank" rel="noopener" aria-label="매트릭스 · 한 상대와 내 파티의 비교 원본 크게 보기"><img width="1170" height="386" src="./manual-images/11-matrix-cells.png" alt="매트릭스 · 한 상대와 내 파티의 비교" loading="lazy" decoding="async"></a><figcaption><strong>매트릭스 · 한 상대와 내 파티의 비교</strong><br>목호의 갸라도스 한 행입니다. 선공 → 공격 → 피격 → 태그·입수 근거 순서로 읽습니다. 클릭하면 해당 조합을 선택합니다. <a href="./manual-images/11-matrix-cells.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
+        <figure class="manual-shot"><a href="./manual-images/11-matrix-cells.png" target="_blank" rel="noopener" aria-label="매트릭스 · 한 상대와 내 파티의 비교 원본 크게 보기"><img width="1170" height="386" src="./manual-images/11-matrix-cells.png" alt="매트릭스 · 한 상대와 내 파티의 비교" loading="lazy" decoding="async"></a><figcaption><strong>매트릭스 · 한 상대와 내 파티의 비교</strong><br>목호의 망나뇽 한 행입니다. 선공 → 공격 → 피격 → 태그·입수 근거 순서로 읽습니다. 클릭하면 해당 조합을 선택합니다. <a href="./manual-images/11-matrix-cells.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
         <h3>작은 태그에 담긴 조건</h3>
         <p><span class="tag">잠빙52+</span> 같은 표시는 <strong>특공 EV 252와 최소 합법 IV 예시</strong>를 기준으로, 잠재파워 얼음 위력 52부터 확정 1타가 가능한 추천이라는 뜻입니다. 숫자는 표시 형식의 예시입니다. 현재 파티의 잠재파워가 이미 그 타입·위력이라는 뜻도, 파티에 꼭 필요하다는 뜻도 아닙니다.</p>
         <p><span class="tag">돌파가능</span>은 직접 공격으로 유리한 경우, <span class="tag">회복루프돌파가능</span>은 직접 돌파는 어렵지만 충분한 고급상처약(200 HP 회복)을 섞어 공격할 수 있는 경우입니다. 둘 다 아니면 <span class="tag">돌파불가</span>로 표시합니다.</p>
         <p>분석·여정의 전체/트레이너별/선택 포켓몬 요약은 직접 대응, 회복루프 대응, 미대응, 계산 불가를 별도로 집계합니다. 같은 상대에 직접 대응과 회복루프 대응이 모두 있으면 직접 대응에만 포함합니다. 회복루프 대응은 직접 대응할 파티원 없이 회복 경로로만 돌파 가능한 상대 수이며 황색으로 구분합니다. 모든 파티원이 입수 전이면 미대응에 포함하며 계산 불가와 섞지 않습니다.</p>
         <p><span class="tag">회복루프가능</span>은 맞은 결과를 확인한 뒤 다음 행동을 고르는 피해 기준입니다. 남은 HP가 다음 급소 최대 피해보다 많으면 공격하고, 이하면 고급상처약으로 회복합니다. 따라서 급소가 HP 50%를 넘어도 일반 최대 피해+급소 최대 피해가 HP보다 작으면 일반타 뒤 한 번 더 공격할 수 있습니다. 일반 피해는 200 미만, 급소 피해는 200 이하여야 회복 중에도 버틸 수 있습니다. 급소를 먼저 맞거나 연속 급소가 나오면 회복을 반복합니다. 회복량은 최대 HP를 넘기지 않는 200 HP입니다. 이 운영이 불가능하고 빗나감·낮은 난수·급소 회피·힘껏펀치 조건에 의존하면 <span class="tag">조건부 회복루프 가능</span>이며 성공으로 올리지 않습니다. 아이템 재고·PP·상태이상·추가 효과까지 포함한 무한 회복이나 승리 보장은 아닙니다. 프레젠트 승률은 별도의 PP 제한 회복 계획으로 계산합니다.</p>
         <p class="small">검사 중 대응 수치는 완료된 계산만 반영해 변할 수 있습니다. 전체 판정은 계산 완료 여부와 ‘계산 불가’ 개수를 함께 읽습니다. 태그를 놓쳤다면 상세 분석에서 같은 조건을 다시 확인합니다.</p>
+        <p><span class="tag">급소주의</span> 앞의 딱구리 이미지는 경고 아이콘입니다. <strong>현재 공격 순서에서 상대 공격 한 번이 급소가 되면 쓰러질 수 있는 직접 돌파 셀</strong>에 붙습니다. 돌파가능 판정은 유지합니다. 급소 확률을 계산해 전체 승률로 바꾼 숫자는 아니며, 태그가 없다고 모든 실전 변수가 안전하다는 뜻도 아닙니다.</p>
+        <figure class="manual-shot narrow"><a href="./manual-images/20-critical-warning.png" target="_blank" rel="noopener"><img style="width:auto;max-width:100%;margin:16px auto" src="./manual-images/20-critical-warning.png" alt="딱구리 아이콘이 붙은 급소주의 태그" loading="lazy"></a><figcaption><strong>급소주의 · 직접 돌파 판정은 유지</strong><br>아이콘 자체가 별도 파티원이나 추천 포켓몬을 뜻하지는 않습니다.</figcaption></figure>
+        <figure class="manual-shot"><a href="./manual-images/15-recovery-coverage.png" target="_blank" rel="noopener"><img src="./manual-images/15-recovery-coverage.png" alt="얼음 샘플 여정의 직접 대응과 회복루프 대응을 분리한 집계" loading="lazy"></a><figcaption><strong>현재 여정 · 대응 경로를 따로 읽기</strong><br>직접 대응과 회복루프 대응은 중복하지 않습니다. 약이 필요한 상대를 직접 대응에 합쳐 읽지 않습니다.</figcaption></figure>
       </section>
 
       <section class="chapter" id="analysis" aria-labelledby="analysis-title">
         <h2 id="analysis-title"><small>06 / DETAILED ANALYSIS</small>어디에서 막히는지 확인합니다</h2>
         <h3>상대와 내 포켓몬 선택</h3>
         <p>상대 트레이너 목록에서 이름·클래스·ID를 검색할 수 있습니다. 상대 포켓몬 종·도감번호, 만나는 위치, 트레이너 클래스, 최소·최대 레벨, 싱글·더블 필터를 함께 사용해 목록을 좁힙니다. 결과가 없으면 입력한 조건을 지우거나 선택을 ‘전체’로 되돌립니다.</p>
+        <p><strong>‘위치 정보’는 기본적으로 ‘위치 있는 상대만’</strong>입니다. 찾는 트레이너가 없으면 ‘위치 없는 상대 포함’ 또는 ‘위치 없는 상대만’으로 바꿉니다. 위치 유무와 전투 시점 지정 여부는 별개입니다.</p>
+        <figure class="manual-shot narrow"><a href="./manual-images/18-location-filter.png" target="_blank" rel="noopener"><img src="./manual-images/18-location-filter.png" alt="위치가 등록되지 않은 트레이너를 포함하거나 따로 찾는 위치 정보 필터" loading="lazy"></a><figcaption><strong>목록에 상대가 없을 때</strong><br>이름 검색과 별도로 위치 정보 필터를 확인합니다.</figcaption></figure>
         <p>위쪽 ‘내 포켓몬’에서 내 파티원을, 트레이너 이름 아래 상대 탭에서 상대 포켓몬을 고릅니다. 전체 상성 매트릭스의 셀을 누르면 둘을 한 번에 선택합니다. 열 머리글과 상대 행 이름으로 각 축만 바꿀 수도 있습니다.</p>
         <p>여정에서 들어오면 선택한 전투의 시점을 이어받습니다. 상세 분석에서 트레이너를 바꾸면 등록된 주요 전투는 시점을 다시 참조하고, 그 외에는 미지정일 수 있습니다. ‘기술 습득 정보’의 현재 체크포인트/전투 시점 미지정 표시를 확인합니다.</p>
         <figure class="manual-shot narrow"><a href="./manual-images/09-trainer-filters.png" target="_blank" rel="noopener" aria-label="상세 분석 · 상대 검색 조건 원본 크게 보기"><img width="283" height="195" src="./manual-images/09-trainer-filters.png" alt="상세 분석 · 상대 검색 조건" loading="lazy" decoding="async"></a><figcaption><strong>상세 분석 · 상대 검색 조건</strong><br>상대 포켓몬·위치·클래스·레벨·싱글/더블 조건을 좁히는 영역입니다. 이름·ID 검색은 이 영역 위쪽에 있습니다. <a href="./manual-images/09-trainer-filters.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
@@ -148,6 +170,7 @@
         <figure class="manual-shot"><a href="./manual-images/08-build-controls.png" target="_blank" rel="noopener" aria-label="상세 분석 · 내 파티와 육성값 원본 크게 보기"><img width="1188" height="652" src="./manual-images/08-build-controls.png" alt="상세 분석 · 내 파티와 육성값" loading="lazy" decoding="async"></a><figcaption><strong>상세 분석 · 내 파티와 육성값</strong><br>맨 위에서 내 포켓몬을 고르고 도구·특성·성격·IV·EV를 조정합니다. 초기값 버튼은 항목별로 동작합니다. <a href="./manual-images/08-build-controls.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
         <h3>요약 카드와 피해 표</h3>
         <figure class="manual-shot"><a href="./manual-images/04-detail-analysis.png" target="_blank" rel="noopener"><img width="1188" height="331" src="./manual-images/04-detail-analysis.png" alt="팬텀과 망나뇽의 종·레벨·HP·특성 및 공격·피격·선공 요약" loading="lazy" decoding="async"></a><figcaption><strong>상세 분석 · 선택한 두 포켓몬과 요약</strong><br>내 포켓몬과 상대의 종·레벨·HP가 의도한 조건인지 먼저 확인한 뒤, 공격·피격 타수와 선공 조건을 읽습니다. <a href="./manual-images/04-detail-analysis.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
+        <figure class="manual-shot"><a href="./manual-images/19-summary-cards.png" target="_blank" rel="noopener"><img src="./manual-images/19-summary-cards.png" alt="대표 공격·피격·추천 보완·선공 조건을 나눈 네 요약 카드" loading="lazy"></a><figcaption><strong>공격·피격·선공을 각각 확인</strong><br>한 방을 낼 화력과 먼저 공격할 스피드는 서로 다른 조건입니다.</figcaption></figure>
         <p>‘가장 빠른 공략’은 내 대표 공격과 타수를, ‘최대 피격 위험’은 상대 대표 공격과 피해를 보여 줍니다. ‘추천 보완’은 확정 타수를 개선할 육성 방향을 제안합니다. ‘선공 조건’은 현재·상대 스피드와 필요한 스피드 EV를 보여 주며, EV 252로도 후공인 경우도 표시합니다.</p>
         <p>‘내 기술 → 상대’와 ‘상대 기술 → 나’에서 기술별 물리·특수 구분, 위력, 명중, 결정력, 피해 범위를 비교합니다. <strong>확정 1타</strong>는 최저 피해로도 쓰러뜨릴 수 있다는 뜻입니다. 최대 피해가 100%를 넘는 것만으로 확정 1타가 되지는 않습니다.</p>
         <p>HP는 피해량의 기준입니다. 내 파티 탭과 대결 요약의 HP, 피해 표 아래 ‘대상 HP’를 함께 확인합니다. 이 화면에서 HP를 직접 입력하는 기능은 없습니다. 결정력은 공격 측 화력, 물내·특내는 물리·특수 내구를 비교하는 지표이며 승률의 퍼센트가 아닙니다.</p>
@@ -158,7 +181,10 @@
         <figure class="manual-shot"><a href="./manual-images/12-move-acquisition.png" target="_blank" rel="noopener" aria-label="상세 분석 · 기술 습득 위치와 시점 원본 크게 보기"><img width="1188" height="1217" src="./manual-images/12-move-acquisition.png" alt="상세 분석 · 기술 습득 위치와 시점" loading="lazy" decoding="async"></a><figcaption><strong>상세 분석 · 기술 습득 위치와 시점</strong><br>기술 이름 옆 상태와 각 카드의 위치·시점·자원 안내를 확인합니다. 입수 근거를 읽는 목록이지 기술 장착 버튼은 아닙니다. <a href="./manual-images/12-move-acquisition.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
         <h3>딜리버드 프레젠트 전용 패널</h3>
         <p>해당 조건에서는 일반 타수 비교 대신 프레젠트 승률 패널이 나옵니다. 프레젠트만 사용하고 상대는 대표 공격을 반복하며, 교체·내 회복 아이템·급소는 제외합니다. 프레젠트 PP 15, 상대 기술 PP 20을 가정하고, 명중·위력·상대 회복 분기를 계산합니다. 이 제한 아래 승률 80% 이상을 성공으로 표시하며 일반 확정 공략과 구별합니다.</p>
-        <p>계산된 승률이 80% 미만이면 공략 실패입니다. 계산 불가는 조건 미지원이나 계산 한도로 미확정인 경우입니다. 직접 돌파가 안 되고 급소까지 안전하게 회복할 수 있으면 고급상처약→프레젠트도 계산합니다. 회복마다 HP에 200을 더해 최대 HP로 제한한 뒤 피격을 뺍니다. 추가 회복이 필요하면 그 턴과 상대 PP도 차감합니다. 상대 PP 20 안에서 최대 10회 공격하며, 추가 회복이 많으면 공격 기회는 줄어듭니다. 필요한 약 수량은 결과에 표시합니다. 승률 80% 이상일 때만 회복루프돌파가능으로 표시하며 상대의 다른 기술·상태이상·추가 효과는 별도입니다.</p>
+        <p>계산된 승률이 <strong>80% 미만이면 공략 실패</strong>입니다. 계산 불가는 조건 미지원이나 계산 한도로 미확정인 경우입니다. 직접 돌파가 안 되고 급소까지 안전하게 회복할 수 있으면 고급상처약을 섞는 경로도 계산합니다.</p>
+        <p>회복 경로는 <strong>남은 HP로 다음 최대 급소를 버티면 공격하고, 그렇지 않으면 회복</strong>합니다. 매번 공격 전에 약을 쓰는 고정 교대 방식이 아닙니다. 고급상처약은 HP 200을 더하되 최대 HP를 넘지 않으며, 공격·회복 모두 상대 PP를 소비합니다. 프레젠트 PP 15·상대 PP 20 안에서 가능한 공격 횟수와 약 수량을 계산합니다. 상대 자뭉열매의 1회 회복도 반영합니다. 현재 내 지닌 도구 등 미지원 조건은 계산 불가로 남을 수 있습니다.</p>
+        <p>예를 들어 얼음 샘플의 딜리버드 대 호일 스라크는 현재 설정에서 <strong>프레젠트 11회·고급상처약 9개, 약 82.87%</strong>로 회복루프 대응입니다. 상대 자뭉열매를 포함한 전용 계산 예시이며 다른 레벨·능력치에 공통인 수치는 아닙니다. 80% 이상이어도 상대의 다른 기술·상태이상·추가 효과까지 포함한 실제 전투 전체 승률은 아닙니다.</p>
+        <figure class="manual-shot"><a href="./manual-images/16-present-recovery.png" target="_blank" rel="noopener"><img src="./manual-images/16-present-recovery.png" alt="딜리버드 대 스라크의 프레젠트 회복 병행 승률과 고급상처약 수량" loading="lazy"></a><figcaption><strong>프레젠트 전용 · 회복 병행 판정</strong><br>승률만 보지 말고 사용 전략, 필요한 약 수량, PP와 제외 조건을 함께 읽습니다.</figcaption></figure>
         <p>위쪽 <strong>‘주요 전투 여정’</strong>으로 돌아가 조정한 파티를 다시 확인합니다. <strong>‘샘플 선택’</strong>은 시작 화면으로 이동합니다.</p>
       </section>
 
@@ -172,10 +198,11 @@
           <li><strong>위력 30~70을 비교합니다.</strong> ‘현재 EV에서 확정 1타 최소 위력’과 피해 HP·비율을 확인합니다. 타입을 바꾸면 그 타입의 최소 확정 1타 위력, 없으면 70으로 선택값이 바뀝니다.</li>
           <li><strong>표시된 IV와 실제 파티를 비교합니다.</strong> 필요하다면 ‘이 잠재능력으로 변경’을 누르고, 본래 파티의 공격·방어·스피드 결과를 다시 확인합니다.</li>
         </ol>
-        <figure class="manual-shot"><a href="./manual-images/05-hidden-power.png" target="_blank" rel="noopener" aria-label="잠재파워 · 타입·위력·특공 EV와 IV 예시 원본 크게 보기"><img width="868" height="464" src="./manual-images/05-hidden-power.png" alt="잠재파워 · 타입·위력·특공 EV와 IV 예시" loading="lazy" decoding="async"></a><figcaption><strong>잠재파워 · 타입·위력·특공 EV와 IV 예시</strong><br>팬텀 대 목호의 망나뇽 예시입니다. 여기서는 특공 EV 252·얼음 위력 61부터 확정 1타로 계산됩니다. 이 값은 모든 파티에 공통인 기준이 아닙니다. <a href="./manual-images/05-hidden-power.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
+        <figure class="manual-shot"><a href="./manual-images/05-hidden-power.png" target="_blank" rel="noopener" aria-label="잠재파워 · 타입·위력·특공 EV와 IV 예시 원본 크게 보기"><img width="868" height="464" src="./manual-images/05-hidden-power.png" alt="잠재파워 · 타입·위력·특공 EV와 IV 예시" loading="lazy" decoding="async"></a><figcaption><strong>잠재파워 · 타입·위력·특공 EV와 IV 예시</strong><br>팬텀 대 목호의 망나뇽 예시입니다. 추천 최소 위력과 현재 선택한 위력·특공 EV를 구별하고, IV 예시와 피해를 확인한 뒤 적용합니다. 이 값은 모든 파티에 공통인 기준이 아닙니다. <a href="./manual-images/05-hidden-power.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption></figure>
         <h3>‘최소 합법 IV’는 육성 최적값이 아닙니다</h3>
         <p>계산기는 선택한 타입·위력을 만족하는 <strong>여섯 IV의 합이 최소인 합법 예시</strong>를 사용합니다. 잠재파워 공식에 필요한 비트만 남긴 낮은 IV 조합이므로, 화면에 0~3 같은 값이 나오는 것은 오류가 아닙니다.</p>
         <p>이 표는 높은 능력치를 보존하는 최적 IV 추천이나 실제 교배 난이도 안내가 아닙니다. 같은 타입·위력을 만드는 더 높은 IV 조합도 있을 수 있습니다. IV를 올리면 특공뿐 아니라 체력·내구·스피드가 달라지고, IV의 바뀐 비트에 따라 잠재파워 타입·위력 자체도 바뀔 수 있습니다.</p>
+        <p><strong>추천 최소 위력과 현재 선택 위력은 다릅니다.</strong> 매트릭스의 ‘잠빙63+’는 추천 기준이고 계산기의 ‘위력 69’는 지금 선택한 비교값입니다. 적용 버튼을 누르기 전 선택 위력과 IV 예시를 함께 확인합니다. 적용으로 IV가 달라지면 특공·내구·스피드와 추천 기준도 다시 계산되므로, 적용 전후 숫자가 항상 같지는 않습니다.</p>
         <div class="note warning"><p><strong>적용 버튼은 IV 여섯 개만 바꿉니다.</strong> 도구·성격·노력치는 유지하며, 잠재파워를 기술 슬롯에 추가하지 않습니다. 계산기의 특공 EV 252를 보고 적용해도 파티의 특공 EV가 252로 바뀌지는 않습니다. 적용 뒤 상세 분석의 EV와 기술 습득 정보를 별도로 확인합니다.</p></div>
         <h3>추천 숫자를 읽는 예</h3>
         <div class="example"><p><strong>가상의 예시: ‘잠재파워 얼음 · 특공 EV 252 · 위력 52부터 확정 1타’</strong></p><p>현재 선택한 포켓몬·상대·레벨·성격·도구와 최소 합법 IV 예시에서, 특공 EV 252라면 위력 52부터 최저 피해로 한 번에 쓰러뜨릴 수 있다는 뜻입니다. 실전에서 모든 얼음 잠재파워가 위력 52면 된다는 뜻은 아닙니다.</p></div>
